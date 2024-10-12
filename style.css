@@ -13,14 +13,14 @@ nav{
 }
 
 .logo-nav{
-    width: 80px;
+    width: 100px;
     margin: 0px 30px;
 }
 
 .fi-br-menu-burger{
     background-color: #5272ff;
     color: #ffc0cb;
-    font-size: 18px;
+    font-size: 20px;
     margin: 0px 30px;
 }
 
@@ -68,10 +68,96 @@ h1{
      font-size: 20px;
      border: none;
      border-radius: 5px;
-    
+     box-shadow: 1px -2px 3px 8px rgba(82,114,255,0.3);
+     -webkit-box-shadow: 1px -2px 3px 8px rgba(82,114,255,0.3);
+     -moz-box-shadow: 1px -2px 3px 8px rgba(82,114,255,0.3);
 }
 
 .boton-hero:hover{
     cursor: pointer;
     background-color: #5272ff;
 }
+
+main{
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, #94bbe9 100%);
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.titulo-conocimiento{
+    font-family: "Dancing Script";
+    background-color: #9dbae6;
+    margin: 3px;
+    font-size: 35px;
+}
+
+.parrafo-conocimiento{
+    width: 300px;
+    font-size: 8px;
+    margin: 3px;
+    padding: 3px;
+    text-align: center;
+    background-color: #b2b6de;
+    font-family: "Raleway";
+    font-size: 12px;
+}
+
+.contenedor-imagenes{
+    background: radial-gradient(circle, rgba(255,255,139,0.7175245098039216) 3%, rgba(253,254,139,0.87718837535014) 6%, rgba(184,233,148,1) 91%);
+    border-radius: 10px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+
+.p-conocimiento{
+    background-color: #ffff8b;
+    font-family: "Dancing Script";
+}
+
+.imagenes{
+    width: 60px;
+    margin: 10px;
+    background-color: #ffff8b;
+}
+
+.seccion-cita{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Dancing Script";
+}
+
+#icono-cita{
+    width: 50px;
+    height: 30px;
+    margin: 0px 25px;
+    text-align: center;
+}
+
+.fi-sc-quote-right{
+    font-size: 30px;
+}
+
+.cita{
+    width: 300px;
+    height: 80px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#autor-cita{
+    font-size: 20px;
+  margin-bottom: 20px;
+}
+
+
