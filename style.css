@@ -76,6 +76,7 @@ h1{
 .boton-hero:hover{
     cursor: pointer;
     background-color: #5272ff;
+    color: white;
 }
 
 main{
@@ -160,4 +161,211 @@ main{
   margin-bottom: 20px;
 }
 
+.contenedor-proyecto{
+    height: 1200px;
+    background-color: #ffff8b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.texto-proyecto{
+    width: 230px;
+    font-family: "Dancing Script";
+    background: radial-gradient(circle, rgba(255,192,203,1) 12%, rgba(198,82,255,0.773546918767507) 63%, rgba(255,192,203,1) 100%);
+    margin: 3px;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    border-radius: 25px;
+}
+
+.parrafo-proyecto{
+    width: 250px;
+    font-size: 8px;
+    margin: 3px;
+    padding: 3px;
+    text-align: center;
+    background-color: #ffff8b;
+    font-family: "Raleway";
+    font-size: 12px;
+}
+
+.contenedorimg-proyecto{
+    width: 150px;
+    height: 130px;
+    background: radial-gradient(circle, rgba(255,192,203,1) 12%, rgba(198,82,255,0.773546918767507) 63%, rgba(255,192,203,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+
+.img-proyecto{
+    width: 130px;
+    height: 80px;
+}
+
+.texto-img{
+    width: 100%;
+    font-family: "Raleway";
+    background-color: white;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.contenedor-secciones{
+    border: 1px solid black;
+    background-color: #ffff8b;
+    height: 900px;
+    padding: 15px;
+}
+
+.contenedor-contacto{
+    border: 5px double #5272ff;
+    background: linear-gradient(51deg, rgba(255,255,139,0.8995973389355743) 18%, rgba(255,192,203,0.8547794117647058) 85%);  
+    height: 890px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.caja-contacto{
+    width: 270px;
+    height: 320px;
+    margin: 0;
+    background: linear-gradient(51deg, rgba(255,255,139,0.8995973389355743) 18%, rgba(255,192,203,0.8547794117647058) 85%);
+}
+.titulo-contactame{
+    font-family: "Dancing Script";
+    width: 150px;
+    margin: 15px 48px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #5272ffd0;
+    border-radius: 20px;
+    color: white;
+}
+.texto-contactame{
+    font-family: "Raleway";
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 8px;
+    background: linear-gradient(51deg, rgba(255,255,139,0.8995973389355743) 18%, rgba(255,192,203,0.8547794117647058) 85%);
+}
+
+.ul-contactame {
+    height: 50%;
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Raleway";
+    font-size: 20px;
+    background: linear-gradient(51deg, rgba(255,255,139,0.8995973389355743) 18%, rgba(255,192,203,0.8547794117647058) 85%);
+
+}
+
+.li-icono{
+  width: 230px;
+  height: 30px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+ 
+.p-icono{
+    width: 150px;
+    margin: 12px;
+}
+
+.fi-brands-facebook{
+    font-size: 22px;
+    color: #5272ff ;
+
+}
+
+.fi-brands-github{
+    font-size: 22px;
+    color: #5272ff;
+}
+
+.fi-brands-discord{
+    font-size: 22px;
+    color: #5272ff;
+}
+
+.fi-ss-envelope{
+    font-size: 22px;
+    color:#5272ff;
+}
+
+.caja-formulario{
+    background: linear-gradient(51deg, rgba(82,114,255,0.5410539215686274) 50%, rgba(255,192,203,0.8603816526610644) 82%);
+    width: 270px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-formulario{
+    font-family: "Dancing Script";
+    width: 150px;
+    margin: 10px 48px;
+    padding: 8px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #5272ffd0;
+    border-radius: 20px;
+    color: white;
+}
+
+.contendor-formulario{
+    width: 100%;
+    height: 400px;
+    background-color: white;
+}
+
+.caja-input{
+    width: 200px;
+    height: 60px;
+    padding: 5px;
+    font-family: "Dancing Script";
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.input-margen{
+    margin: 8px 0px;
+    background-color: white;
+} 
+
+#texto-mensaje{
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    font-family: "Dancing Script";
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+}
+.label-formulario{
+    background-color: white;
+}
+#mensaje{
+    margin: 8px 0px;
+    background-color: white;
+}
