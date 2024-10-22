@@ -12,8 +12,35 @@ nav{
     align-items: center;
 }
 
+.caja-nav{
+    width: 90%;
+    height: 60px;
+ }
+
+.ul-navegacion{
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none; 
+    padding: 0; 
+    background-color: #5272ff;
+}
+
+.li-navegacion{
+    background-color: #5272ff;
+    font-family: "Raleway";
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+.contenedor-navi{
+   background-color: #5272ff;
+}
+
+
 .logo-nav{
-    width: 100px;
+    width: 140px;
     margin: 0px 30px;
 }
 
@@ -217,16 +244,19 @@ main{
 }
 
 .contenedor-secciones{
-    border: 1px solid black;
     background-color: #ffff8b;
     height: 900px;
-    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contenedor-contacto{
     border: 5px double #5272ff;
     background: linear-gradient(51deg, rgba(255,255,139,0.8995973389355743) 18%, rgba(255,192,203,0.8547794117647058) 85%);  
-    height: 890px;
+    width: 90%;      
+    height: 850px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -234,15 +264,15 @@ main{
 }
 
 .caja-contacto{
-    width: 270px;
+    width: 90%;
     height: 320px;
     margin: 0;
     background: linear-gradient(51deg, rgba(255,255,139,0.8995973389355743) 18%, rgba(255,192,203,0.8547794117647058) 85%);
 }
 .titulo-contactame{
     font-family: "Dancing Script";
-    width: 150px;
-    margin: 15px 48px;
+    width: 120px;
+    margin: 8px auto ;
     padding: 10px;
     font-size: 20px;
     text-align: center;
@@ -259,12 +289,12 @@ main{
 }
 
 .ul-contactame {
-    height: 50%;
+    height: 60%;
     margin: 2px;
     padding: 2px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-decoration: none;
     list-style: none;
@@ -275,7 +305,7 @@ main{
 }
 
 .li-icono{
-  width: 230px;
+  width: 200px;
   height: 30px;
   border-radius: 100px;
   display: flex;
@@ -285,8 +315,7 @@ main{
 }
  
 .p-icono{
-    width: 150px;
-    margin: 12px;
+    margin: 0px 14px;
 }
 
 .fi-brands-facebook{
@@ -314,6 +343,7 @@ main{
     background: linear-gradient(51deg, rgba(82,114,255,0.5410539215686274) 50%, rgba(255,192,203,0.8603816526610644) 82%);
     width: 270px;
     height: 450px;
+    margin-top: 15px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -368,4 +398,119 @@ main{
 #mensaje{
     margin: 8px 0px;
     background-color: white;
+}
+
+.contenedor-footer{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5272ff;
+}
+
+.boton-contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #5272ff;
+}
+
+.boton-footer{
+    border: none;
+    margin: 10px 5px;
+    padding: 5px;
+    background-color: #5272ff;
+}
+
+.a-footer{
+    font-family:"Dancing Script" ;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.caja-footer{
+    width: 250px;
+    height: 200px;
+    margin-top: 10px;
+    background-color: #5272ff;
+}
+
+.iconos-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    background-color: #5272ff;
+}
+
+.li-footer{
+    background-color: #5272ff;
+}
+
+.a-footer{
+    margin: 5px;
+    padding: 5px;
+    background-color: #5272ff;
+    text-decoration: none;
+
+}
+
+#fi-brands-facebook{
+    font-size: 30px;
+    color: white;
+    background-color: #5272ff;
+}
+
+#fi-brands-github{
+    font-size: 30px;
+    color: white;
+    background-color: #5272ff;
+}
+
+#fi-brands-discord{
+    font-size: 30px;
+    color: white;
+    background-color: #5272ff;
+}
+
+#fi-ss-envelope{
+    font-size: 28px;
+    color: white;
+    background-color: #5272ff;
+}
+
+.parrafo-footer{
+    background-color: #5272ff;
+    font-size: 15px;
+    font-family: "Raleway";
+    color: white;
+    margin: 20px;
+    background-color: #5272ff;
+}
+
+
+/* ---------------------------------MEDIAS QUERIS-------------------------------- */
+
+@media (min-width:768px) {
+    nav{
+        height: 80px;
+    }
+   
+    .contenedor-navi{
+        display: none;
+    }
+
+}
+
+@media (max-width:768px){
+    .caja-nav{
+        display: none;
+    }
+    .logo-nav{
+        width: 100px;
+       margin:  10px;
+    }
 }

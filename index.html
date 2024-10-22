@@ -17,11 +17,21 @@
 </head>
 <body>
     <nav>
-            <img class="logo-nav" src="./imagenes/logo nav.jpg" alt="logo-navegacion">
+        <img class="logo-nav" src="./imagenes/logo nav.jpg" alt="logo-navegacion">
+        <div class="caja-nav">
+            <ul class="ul-navegacion">
+                <li > <a class="li-navegacion" href="#HERO">HOLA</a></li>
+                <li ><a class="li-navegacion" href="#CONOCIMIENTO">CONOCIMIENTOS</a></li>
+                <li ><a class="li-navegacion" href="#PROYECTO">PROYECTOS</a></li>
+                <li ><a class="li-navegacion" href="#CONTACTO"> CONTACTO</a></li>
+            </ul>
+        </div>
+        <div class="contenedor-navi">
             <i class="fi fi-br-menu-burger"></i>
-    </nav>
+        </div>
+       </nav>
 
-    <header class="contenedor-hero">
+    <header class="contenedor-hero" id="HERO">
         <p class="parrafo-hero1">
             ¡Hola! Soy
         </p>
@@ -38,7 +48,7 @@
         </button>
     </header>
 
-    <main>
+    <main id="CONOCIMIENTO">
         <p class="titulo-conocimiento">
             Mis Conocimientos
         </p>
@@ -86,7 +96,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fdfe8b" fill-opacity="0.8" d="M0,224L48,197.3C96,171,192,117,288,90.7C384,64,480,64,576,101.3C672,139,768,213,864,245.3C960,277,1056,267,1152,245.3C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
 
-    <section class="contenedor-proyecto">
+    <section class="contenedor-proyecto" id="PROYECTO">
         <p class="texto-proyecto"> 
             Mis Proyectos
         </p>
@@ -137,7 +147,7 @@
        </div>
     </section>
 
-    <section class="contenedor-secciones">
+    <section class="contenedor-secciones" id="CONTACTO">
         <section class="contenedor-contacto">
             <div class="caja-contacto">
                 <p class="titulo-contactame">
@@ -195,10 +205,37 @@
         </section>
     </section>
 
-    <footer>
-        con una nav
-        y con contacots y con lo que dice echo por mi 
-
+    <footer class="contenedor-footer">
+        <div class="boton-contenedor">
+            <button class="boton-footer">
+               <a class="a-footer" href="#HERO">HOLA</a> 
+            </button>
+            <button class="boton-footer">
+                <a class="a-footer"  href="#CONOCIMIENTO">CONOCIMIENTOS</a>
+            </button>
+            <button class="boton-footer" >
+                <a class="a-footer"  href="#PROYECTO">PROYECTOS</a>
+            </button>
+        </div>
+        <div class="caja-footer">
+           <ul class="iconos-footer">
+            <li class="li-footer">
+            <a class="a-footer" href="https://www.facebook.com/?locale=es_LA"><i class="fi fi-brands-facebook" id="fi-brands-facebook"></i></a> 
+            </li>
+            <li class="li-footer" >
+                <a  class="a-footer" href="https://github.com/"><i class="fi fi-brands-github" id="fi-brands-github"></i> </a>
+            </li>
+            <li class="li-footer" >
+                <a class="a-footer" href="https://discord.com/"><i class="fi fi-brands-discord" id="fi-brands-discord"></i></a>
+            </li>
+            <li class="li-footer" >
+                <a class="a-footer" href="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F%3Ftab%3Drm%26ogbl&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F%3Ftab%3Drm%26ogbl&osid=1&passive=1209600&service=mail&ifkv=ARpgrqdjcIi_R3o4eQCOOFrDmizmTJAw5ONbecUsWw7gpbeHvI7JgQDLTZ-_WhGY_-piZrSUP7_uqg&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="fi fi-ss-envelope" id="fi-ss-envelope"></i> </a>  
+            </li>
+           </ul>
+        </div>
+        <p class="parrafo-footer">
+            Hecho por &#128525; Rocio Peralta
+        </p>
     </footer>
 </body>
 </html>
