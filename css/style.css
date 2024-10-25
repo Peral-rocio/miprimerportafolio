@@ -3,6 +3,8 @@
     background-color: #ffc0cb;
 }
 
+/* -----------------------------------------NAV---------------------------------------------- */
+
 nav{
     width: 100vw;
     height: 40px;
@@ -51,22 +53,42 @@ nav{
     margin: 0px 30px;
 }
 
+/* -----------------------------------------------HEADER----------------------------------------------- */
+
 .contenedor-hero{
     height: 400px;
     background-color: #ffc0cb;
     border: 3px solid rgb(255, 255, 139) ;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.caja-hero{
+    width: 90%;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
 .parrafo-hero1{
     width: 100%;
     font-family: "Raleway";
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
     margin: 10px;
+}
+
+h1{
+    font-family: "Dancing Script";
+    margin: 0px 5px 5px 5px ;
+}
+
+.img-hero{
+    width: 65%;
 }
 
 .parrafo-hero2{
@@ -78,26 +100,17 @@ nav{
     margin: 10px 25px;
 }
 
-h1{
-    font-family: "Dancing Script";
-    margin: 0px 5px 5px 5px ;
-}
-
-.img-hero{
-    width: 55%;
-}
-
 .boton-hero{
     font-family: "Dancing Script";
    background-color:rgb(255, 255, 139) ;
-     margin: 10px;
+     margin: 12px;
     padding: 10px;
      font-size: 20px;
      border: none;
      border-radius: 5px;
-     box-shadow: 1px -2px 3px 8px rgba(82,114,255,0.3);
-     -webkit-box-shadow: 1px -2px 3px 8px rgba(82,114,255,0.3);
-     -moz-box-shadow: 1px -2px 3px 8px rgba(82,114,255,0.3);
+     box-shadow: 8px 4px 20px 11px rgba(137,145,232,0.56);
+     -webkit-box-shadow: 8px 4px 20px 11px rgba(137,145,232,0.56);
+     -moz-box-shadow: 8px 4px 20px 11px rgba(137,145,232,0.56);
 }
 
 .boton-hero:hover{
@@ -105,6 +118,8 @@ h1{
     background-color: #5272ff;
     color: white;
 }
+
+/* ------------------------------------------MAIN----------------------------------------------------- */
 
 main{
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, #94bbe9 100%);
@@ -156,6 +171,8 @@ main{
     background-color: #ffff8b;
 }
 
+/* --------------------------------------SECTION CITA----------------------------------------- */
+
 .seccion-cita{
     height: 300px;
     display: flex;
@@ -188,6 +205,8 @@ main{
   margin-bottom: 20px;
 }
 
+/* -----------------------------------------SECTION PROYECTOS---------------------------------------- */
+
 .contenedor-proyecto{
     height: 1200px;
     background-color: #ffff8b;
@@ -210,7 +229,6 @@ main{
 
 .parrafo-proyecto{
     width: 250px;
-    font-size: 8px;
     margin: 3px;
     padding: 3px;
     text-align: center;
@@ -243,10 +261,11 @@ main{
     margin-top: 8px;
 }
 
+/* --------------------------------------------SECTION CONTACTO Y FORMULARIO------------------------------------- */
+
 .contenedor-secciones{
     background-color: #ffff8b;
     height: 900px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -265,7 +284,7 @@ main{
 
 .caja-contacto{
     width: 90%;
-    height: 320px;
+    height: 425px;
     margin: 0;
     background: linear-gradient(51deg, rgba(255,255,139,0.8995973389355743) 18%, rgba(255,192,203,0.8547794117647058) 85%);
 }
@@ -305,8 +324,8 @@ main{
 }
 
 .li-icono{
-  width: 200px;
-  height: 30px;
+  width: 230px;
+  height: 35px;
   border-radius: 100px;
   display: flex;
   justify-content: center;
@@ -315,7 +334,7 @@ main{
 }
  
 .p-icono{
-    margin: 0px 14px;
+    margin: 0px 10px;
 }
 
 .fi-brands-facebook{
@@ -341,8 +360,8 @@ main{
 
 .caja-formulario{
     background: linear-gradient(51deg, rgba(82,114,255,0.5410539215686274) 50%, rgba(255,192,203,0.8603816526610644) 82%);
-    width: 270px;
-    height: 450px;
+    width: 90%;
+    height: 425px;
     margin-top: 15px; 
     display: flex;
     flex-direction: column;
@@ -400,6 +419,9 @@ main{
     background-color: white;
 }
 
+/* 
+----------------------------------------SECTION FOOOTER--------------------------------------------------- */
+
 .contenedor-footer{
     height: 150px;
     display: flex;
@@ -410,6 +432,7 @@ main{
 }
 
 .boton-contenedor{
+    width: 90%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -431,7 +454,7 @@ main{
 }
 
 .caja-footer{
-    width: 250px;
+    width: 90%;
     height: 200px;
     margin-top: 10px;
     background-color: #5272ff;
@@ -495,22 +518,264 @@ main{
 /* ---------------------------------MEDIAS QUERIS-------------------------------- */
 
 @media (min-width:768px) {
+
+    /* -----------------------------NAV------------------------------ */
     nav{
         height: 80px;
     }
-   
-    .contenedor-navi{
-        display: none;
-    }
-
-}
-
-@media (max-width:768px){
     .caja-nav{
         display: none;
     }
+    
     .logo-nav{
-        width: 100px;
-       margin:  10px;
+        width: 150px;
+       margin:  10px 50px;
     }
+
+    .fi-br-menu-burger{
+        font-size: 40px;
+        margin: 10px 50px;
+    }
+    /* --------------------------------HEADER------------------------------------ */
+    .caja-hero{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    } 
+    .parrafo-hero1{
+        font-size: 25px;
+    }
+    
+    h1{
+        width: 50%;
+        font-size: 50px ;
+        text-align: center;
+    }
+    .img-hero{
+        width: 180px;
+    }
+
+    .parrafo-hero2{
+        width: 90%;
+        height: 60px;
+        margin: 10px;
+        font-size: 16px ;
+    }
+
+    .boton-hero{
+        font-size: 30px;
+        margin-bottom: 10px ;
+        padding: 10px;
+
+    }
+  
+    /* -------------------------------------MAIN-------------------------------- */
+
+    main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .titulo-conocimiento{
+        width: 60%;
+        height: 60px;
+        font-size: 50px;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    .parrafo-conocimiento{
+        width: 80%;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .contenedor-imagenes{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .imagenes{
+        width: 85px;
+    }
+
+    .p-conocimiento{
+        font-size: 20px;
+    }
+     
+/* -------------------------------SECTION CITA-------------------------------------- */
+    #icono-cita{
+        height: 60px;
+    } 
+    .fi-sc-quote-right{
+        font-size: 50px;
+    }
+
+    .cita{
+        width: 700px;
+        height: 100px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    #autor-cita{
+      font-size: 25px;
+      margin: 15px;
+}
+
+/* --------------------------------------SECTION PROYECTOS------------------------------- */
+    .contenedor-proyecto{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items:center;
+        padding: 50px;
+    }
+
+    .texto-proyecto{
+        width: 50%;
+        text-align: center;
+        font-size: 50px;
+        border-radius: 25px;
+        margin: auto;
+    }
+
+    .parrafo-proyecto{
+    width: 90%;
+    height: 80px;
+    font-size: 20px;
+    margin: auto;
+}
+
+.contenedorimg-proyecto{
+    width: 280px;
+    height: 230px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+} 
+
+.img-proyecto{
+    width: 80%;
+    height: 150px;
+}
+
+.texto-img{
+    width: 100%;
+    font-size: 23px;
+    text-align: center;
+    margin: 8px 0;
+
+}
+/* -------------------------------------SECTION CONTACTOS Y FORMULARIO------------------------ */
+
+.titulo-contactame{
+    width: 80%;
+    margin: 20px  auto;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.texto-contactame{
+    width: 90%;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 8px;
+    padding: 3px;
+}
+.ul-contactame {
+    font-size: 30px;
+}
+
+
+.li-icono{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .p-icono{
+    margin: 0px 50px;
+}
+
+.fi-brands-facebook{
+    font-size: 35px;
+}
+
+.fi-brands-github{
+    font-size: 35px;
+}
+
+.fi-brands-discord{
+    font-size: 35px;
+}
+
+.fi-ss-envelope{
+    font-size: 30px;
+}
+
+#icono-email{
+    margin: 0px 20px;
+}
+
+.titulo-formulario{
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.caja-input{
+    width: 500px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.input-margen{
+    width: 200px;
+    height: 40px;
+    margin: 8px 0px;
+} 
+
+#texto-mensaje{
+    width: 500px;
+    height: 100px;
+    padding: 5px;
+    font-size: 26px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.label-formulario{
+    margin: 0px 10px;
+    font-size: 26px ;
+}
+
+#mensaje{
+    margin:8px;
+}
+
+/* ---------------------------------------FOOTER-------------------------------------- */
+
 }
