@@ -42,8 +42,8 @@ nav{
 
 
 .logo-nav{
-    width: 140px;
-    margin: 0px 30px;
+    width: 100px;
+    margin: 0px 25px;
 }
 
 .fi-br-menu-burger{
@@ -517,9 +517,15 @@ main{
 
 /* ---------------------------------MEDIAS QUERIS-------------------------------- */
 
+@media (min-width:320px) {
+    .caja-nav {
+        display: none;
+    }
+}
+
 @media (min-width:768px) {
 
-    /* -----------------------------NAV------------------------------ */
+    /* ------NAV---- */
     nav{
         height: 80px;
     }
@@ -528,15 +534,18 @@ main{
     }
     
     .logo-nav{
-        width: 150px;
-       margin:  10px 50px;
+        width: 170px;
+       margin:  5px 50px;
     }
 
     .fi-br-menu-burger{
         font-size: 40px;
         margin: 10px 50px;
     }
-    /* --------------------------------HEADER------------------------------------ */
+
+    
+
+    /* ----------HEADER---------------- */
     .caja-hero{
         display: flex;
         flex-direction: row;
@@ -571,7 +580,7 @@ main{
 
     }
   
-    /* -------------------------------------MAIN-------------------------------- */
+    /* ---------MAIN---------- */
 
     main{
         display: flex;
@@ -612,7 +621,7 @@ main{
         font-size: 20px;
     }
      
-/* -------------------------------SECTION CITA-------------------------------------- */
+/* ----------SECTION CITA----------- */
     #icono-cita{
         height: 60px;
     } 
@@ -632,7 +641,7 @@ main{
       margin: 15px;
 }
 
-/* --------------------------------------SECTION PROYECTOS------------------------------- */
+/* ----------SECTION PROYECTOS--------- */
     .contenedor-proyecto{
         display: flex;
         flex-direction: row;
@@ -679,7 +688,7 @@ main{
     margin: 8px 0;
 
 }
-/* -------------------------------------SECTION CONTACTOS Y FORMULARIO------------------------ */
+/* ------SECTION CONTACTOS Y FORMULARIO--------- */
 
 .titulo-contactame{
     width: 80%;
@@ -776,6 +785,42 @@ main{
     margin:8px;
 }
 
-/* ---------------------------------------FOOTER-------------------------------------- */
+/* ---------FOOTER---------- */
+
+.contenedor-footer{
+    height: 200px;
+}
+
+.boton-footer{
+    margin: 15px 5px;
+}
+
+.a-footer{
+    font-size: 25px;
+}
+
+.caja-footer{
+    height: 50px;
+}
+
+#fi-brands-facebook{
+    font-size: 40px;
+}
+
+#fi-brands-github{
+    font-size: 40px;
+}
+
+#fi-brands-discord{
+    font-size: 40px;
+}
+
+#fi-ss-envelope{
+    font-size: 38px;
 
 }
+.parrafo-footer{
+    font-size: 20px;
+}
+}
+
