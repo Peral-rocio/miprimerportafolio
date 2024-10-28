@@ -92,18 +92,18 @@ h1{
 }
 
 .parrafo-hero2{
-    width: 100%;
-    height: 40px;
+    width: 90%;
+    height: 50px;
     font-family: "Raleway";
     font-size: 10px;
     text-align: center;
-    margin: 10px 25px;
+    margin: 8px;
 }
 
 .boton-hero{
     font-family: "Dancing Script";
    background-color:rgb(255, 255, 139) ;
-     margin: 12px;
+     margin: 12px 12px 14px 12px;
     padding: 10px;
      font-size: 20px;
      border: none;
@@ -138,7 +138,7 @@ main{
 }
 
 .parrafo-conocimiento{
-    width: 300px;
+    width: 280px;
     font-size: 8px;
     margin: 3px;
     padding: 3px;
@@ -372,7 +372,7 @@ main{
 .titulo-formulario{
     font-family: "Dancing Script";
     width: 150px;
-    margin: 10px 48px;
+    margin: 10px 45px;
     padding: 8px;
     font-size: 20px;
     text-align: center;
@@ -433,6 +433,7 @@ main{
 
 .boton-contenedor{
     width: 90%;
+    margin-top: 4px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -441,7 +442,7 @@ main{
 
 .boton-footer{
     border: none;
-    margin: 10px 5px;
+    margin: 8px 5px;
     padding: 5px;
     background-color: #5272ff;
 }
@@ -455,7 +456,7 @@ main{
 
 .caja-footer{
     width: 90%;
-    height: 200px;
+    height: 38px;
     margin-top: 10px;
     background-color: #5272ff;
 }
@@ -515,9 +516,9 @@ main{
 }
 
 
-/* ---------------------------------MEDIAS QUERIS-------------------------------- */
+/* ---------------------------------MEDIAS QUERIS 768-------------------------------- */
 
-@media (min-width:320px) {
+@media (max-width:768px) {
     .caja-nav {
         display: none;
     }
@@ -823,4 +824,167 @@ main{
     font-size: 20px;
 }
 }
+
+/* -----------------------------------------MEDIA QUERIS 1024------------------------------- */
+
+@media (min-width:1024px) {
+    /* ------NAV------- */
+
+    /* ------HEADER--------- */
+    .contenedor-hero{
+        height: 900px;
+    }
+
+    .caja-hero{
+        height: 880px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .parrafo-hero1{
+        font-size: 40px;
+    }
+
+    h1{
+        width: 90%;
+        font-size: 70px;
+    }
+    .img-hero{
+        width: 350px;
+    }
+
+    .parrafo-hero2{
+        width: 95%;
+        height: 80px;
+        margin: 4px;
+        font-size: 22px ;
+    }
+
+    .boton-hero{
+        font-size: 45px;
+        padding: 20px;
+    }
+
+    /* -----MAIN-------- */
+
+    main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .titulo-conocimiento{
+        width: 60%;
+        height: 75px;
+        font-size: 65px;
+    }
+    
+    .parrafo-conocimiento{
+        font-size: 22px;
+    }
+
+    .contenedor-imagenes{
+        width: 400px;
+        height: 200px; 
+    }
+
+    .imagenes{
+        width: 100px;
+    }
+
+    .p-conocimiento{
+        font-size: 25px;
+    }
+
+/* --------SECTION CITA------ */
+
+.seccion-cita{
+    height: 800px;
+}
+#icono-cita{
+    width: 100px;
+    height: 90px;
+} 
+.fi-sc-quote-right{
+    font-size: 80px;
+}
+
+.cita{
+    height: 180px;
+    font-size: 35px;
+    margin-top: 5px;
+}
+
+#autor-cita{
+  font-size: 30px;
+  margin: 15px;
+}
+
+/* -------SECTION PROYECTOS-------- */
+
+.texto-proyecto{
+    width: 60%;
+    font-size: 65px;
+    margin: auto;
+}
+
+.parrafo-proyecto{
+    width: 90%;
+    height: 60px;
+    font-size: 22px;
+    margin: auto;
+}
+/* ----SECTION CONTACTOS Y FORMULARIO--- */
+
+
+.contenedor-secciones{
+    height: 1000px;
+}
+ 
+.contenedor-contacto{     
+    height: 950px;
+}
+
+.caja-contacto{
+    height: 475px;
+    margin: 10px 0px;
+}
+
+.titulo-contactame{
+    font-size: 35px;
+}
+
+.texto-contactame{
+    font-size: 22px;
+}
+
+.caja-formulario{ 
+    height: 475px;
+    margin-bottom: 15px; 
+}
+
+.titulo-formulario{
+    font-size: 35px;
+}
+
+.contenedor-formulario{
+    width: 700px;
+}
+
+.caja-input{
+    width: 690px;
+}
+
+.input-margen{
+    width: 400px;
+
+} 
+}
+
+
 
