@@ -15,8 +15,9 @@ nav{
 }
 
 .caja-nav{
-    width: 90%;
+    width: 70%;
     height: 60px;
+    margin: 0px 20px;
  }
 
 .ul-navegacion{
@@ -24,22 +25,27 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    list-style: none; 
-    padding: 0; 
+    list-style: none;
+    padding: 0;
     background-color: #5272ff;
 }
 
 .li-navegacion{
+    padding: 10px;
     background-color: #5272ff;
     font-family: "Raleway";
     font-size: 24px;
     color: white;
     text-decoration: none;
 }
+
+.li-navegacion:hover{
+    background-color: palevioletred;
+    border-radius: 3px;
+}
 .contenedor-navi{
    background-color: #5272ff;
 }
-
 
 .logo-nav{
     width: 100px;
@@ -56,7 +62,7 @@ nav{
 /* -----------------------------------------------HEADER----------------------------------------------- */
 
 .contenedor-hero{
-    height: 400px;
+    height: 500px;
     background-color: #ffc0cb;
     border: 3px solid rgb(255, 255, 139) ;
     display: flex;
@@ -67,10 +73,10 @@ nav{
 
 .caja-hero{
     width: 90%;
-    height: 380px;
+    height: 480px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -85,6 +91,7 @@ nav{
 h1{
     font-family: "Dancing Script";
     margin: 0px 5px 5px 5px ;
+    font-size: 40px;
 }
 
 .img-hero{
@@ -93,14 +100,15 @@ h1{
 
 .parrafo-hero2{
     width: 90%;
-    height: 50px;
+    height: 60px;
     font-family: "Raleway";
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     margin: 8px;
 }
 
 .boton-hero{
+    width: 150px;
     font-family: "Dancing Script";
    background-color:rgb(255, 255, 139) ;
      margin: 12px 12px 14px 12px;
@@ -138,8 +146,7 @@ main{
 }
 
 .parrafo-conocimiento{
-    width: 280px;
-    font-size: 8px;
+    width: 80%;
     margin: 3px;
     padding: 3px;
     text-align: center;
@@ -159,6 +166,9 @@ main{
    justify-content: center;
 }
 
+.contenedor-imagenes:hover{
+   cursor: pointer;
+}
 
 .p-conocimiento{
     background-color: #ffff8b;
@@ -174,7 +184,7 @@ main{
 /* --------------------------------------SECTION CITA----------------------------------------- */
 
 .seccion-cita{
-    height: 300px;
+    height: 380px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -245,7 +255,18 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-} 
+}
+
+.contenedorimg-proyecto:hover{
+    cursor: pointer;
+}
+
+.a-proyecto{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .img-proyecto{
     width: 130px;
@@ -265,7 +286,7 @@ main{
 
 .contenedor-secciones{
     background-color: #ffff8b;
-    height: 900px;
+    height: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -273,9 +294,9 @@ main{
 
 .contenedor-contacto{
     border: 5px double #5272ff;
-    background: linear-gradient(51deg, rgba(255,255,139,0.8995973389355743) 18%, rgba(255,192,203,0.8547794117647058) 85%);  
-    width: 90%;      
-    height: 850px;
+    background: linear-gradient(51deg, rgba(255,255,139,0.8995973389355743) 18%, rgba(255,192,203,0.8547794117647058) 85%);
+    width: 90%;
+    height: 980px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -287,11 +308,15 @@ main{
     height: 425px;
     margin: 0;
     background: linear-gradient(51deg, rgba(255,255,139,0.8995973389355743) 18%, rgba(255,192,203,0.8547794117647058) 85%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 .titulo-contactame{
     font-family: "Dancing Script";
     width: 120px;
-    margin: 8px auto ;
+    margin: 10px auto ;
     padding: 10px;
     font-size: 20px;
     text-align: center;
@@ -303,7 +328,7 @@ main{
     font-family: "Raleway";
     text-align: center;
     font-size: 14px;
-    margin: 10px 8px;
+    margin: 0px 8px;
     background: linear-gradient(51deg, rgba(255,255,139,0.8995973389355743) 18%, rgba(255,192,203,0.8547794117647058) 85%);
 }
 
@@ -332,25 +357,39 @@ main{
   align-items: center;
 
 }
- 
+
 .p-icono{
     margin: 0px 10px;
 }
 
 .fi-brands-facebook{
-    font-size: 22px;
+    font-size: 25px;
     color: #5272ff ;
+}
 
+.fi-brands-facebook:hover{
+    cursor: pointer;
+    color: black;
 }
 
 .fi-brands-github{
-    font-size: 22px;
+    font-size: 25px;
     color: #5272ff;
 }
 
+.fi-brands-github:hover{
+    cursor: pointer;
+    color: black;
+}
+
 .fi-brands-discord{
-    font-size: 22px;
+    font-size: 25px;
     color: #5272ff;
+}
+
+.fi-brands-discord:hover{
+    cursor: pointer;
+    color: black;
 }
 
 .fi-ss-envelope{
@@ -358,14 +397,19 @@ main{
     color:#5272ff;
 }
 
+.fi-ss-envelope:hover{
+    cursor: pointer;
+    color: black;
+}
+
 .caja-formulario{
     background: linear-gradient(51deg, rgba(82,114,255,0.5410539215686274) 50%, rgba(255,192,203,0.8603816526610644) 82%);
     width: 90%;
-    height: 425px;
-    margin-top: 15px; 
+    height: 550px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -381,15 +425,17 @@ main{
     color: white;
 }
 
-.contendor-formulario{
-    width: 100%;
-    height: 400px;
+.contenedor-formulario{
+    width: 80%;
+    height: 360px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .caja-input{
-    width: 200px;
-    height: 60px;
     padding: 5px;
     font-family: "Dancing Script";
     font-size: 20px;
@@ -400,11 +446,16 @@ main{
 .input-margen{
     margin: 8px 0px;
     background-color: white;
-} 
+}
+
+.input-margen:hover{
+    background-color: #5272ffa8;
+}
 
 #texto-mensaje{
-    width: 200px;
+    width: 180px;
     height: 100px;
+    margin: auto;
     padding: 5px;
     font-family: "Dancing Script";
     font-size: 20px;
@@ -419,7 +470,29 @@ main{
     background-color: white;
 }
 
-/* 
+#mensaje:hover{
+    background-color:#5272ffa8 ;
+}
+
+.boton-formulario{
+    font-family: "Dancing Script";
+    background-color: #5272ff;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 22px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+ }
+
+ .boton-formulario:hover{
+     cursor: pointer;
+     background-color: pink;
+     color: black;
+
+}
+
+/*
 ----------------------------------------SECTION FOOOTER--------------------------------------------------- */
 
 .contenedor-footer{
@@ -454,9 +527,16 @@ main{
     font-size: 12px;
 }
 
+.a-footer:hover{
+    cursor: pointer;
+    background-color: palevioletred;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 .caja-footer{
     width: 90%;
-    height: 38px;
+    height: 50px;
     margin-top: 10px;
     background-color: #5272ff;
 }
@@ -474,12 +554,11 @@ main{
     background-color: #5272ff;
 }
 
-.a-footer{
+.ali-footer{
     margin: 5px;
     padding: 5px;
     background-color: #5272ff;
     text-decoration: none;
-
 }
 
 #fi-brands-facebook{
@@ -488,10 +567,18 @@ main{
     background-color: #5272ff;
 }
 
+#fi-brands-facebook:hover{
+    color: palevioletred;
+}
+
 #fi-brands-github{
     font-size: 30px;
     color: white;
     background-color: #5272ff;
+}
+
+#fi-brands-github:hover{
+    color: palevioletred;
 }
 
 #fi-brands-discord{
@@ -500,11 +587,20 @@ main{
     background-color: #5272ff;
 }
 
+#fi-brands-discord:hover{
+    color: palevioletred;
+}
+
 #fi-ss-envelope{
     font-size: 28px;
     color: white;
     background-color: #5272ff;
 }
+
+#fi-ss-envelope:hover{
+    color: palevioletred;
+}
+
 
 .parrafo-footer{
     background-color: #5272ff;
@@ -533,7 +629,7 @@ main{
     .caja-nav{
         display: none;
     }
-    
+
     .logo-nav{
         width: 170px;
        margin:  5px 50px;
@@ -544,53 +640,60 @@ main{
         margin: 10px 50px;
     }
 
-    
 
     /* ----------HEADER---------------- */
+
+    .contenedor-hero{
+        height: 600px;
+        border: 8px solid rgb(255, 255, 139) ;
+    }
+    
     .caja-hero{
+        width: 90%;
+        height: 580px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-    } 
-    .parrafo-hero1{
-        font-size: 25px;
     }
-    
+    .parrafo-hero1{
+        font-size: 40px;
+    }
+
     h1{
         width: 50%;
-        font-size: 50px ;
+        font-size: 60px ;
         text-align: center;
+        margin: 20px;
     }
     .img-hero{
-        width: 180px;
+        width: 250px;
     }
 
     .parrafo-hero2{
         width: 90%;
-        height: 60px;
+        height: 85px;
         margin: 10px;
-        font-size: 16px ;
+        font-size: 18px ;
     }
 
     .boton-hero{
-        font-size: 30px;
-        margin-bottom: 10px ;
-        padding: 10px;
-
+        width: 300px;
+        font-size: 40px;
     }
-  
+
     /* ---------MAIN---------- */
 
     main{
+        height: 900px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
     }
-    
+
     .titulo-conocimiento{
         width: 60%;
         height: 60px;
@@ -606,26 +709,37 @@ main{
     }
 
     .contenedor-imagenes{
-        width: 200px;
+        width: 300px;
         height: 200px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        margin-bottom: 30px;
     }
 
     .imagenes{
-        width: 85px;
+        width: 90px;
     }
 
     .p-conocimiento{
-        font-size: 20px;
+        font-size: 24px;
     }
-     
+
 /* ----------SECTION CITA----------- */
+
+.seccion-cita{
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Dancing Script";
+}
+
     #icono-cita{
         height: 60px;
-    } 
+    }
     .fi-sc-quote-right{
         font-size: 50px;
     }
@@ -644,6 +758,7 @@ main{
 
 /* ----------SECTION PROYECTOS--------- */
     .contenedor-proyecto{
+        height: 1300px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -675,7 +790,7 @@ main{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-} 
+}
 
 .img-proyecto{
     width: 80%;
@@ -690,6 +805,14 @@ main{
 
 }
 /* ------SECTION CONTACTOS Y FORMULARIO--------- */
+
+.contenedor-secciones{
+    height: 1300px;
+}
+
+.contenedor-contacto{
+    height: 1260px;
+}
 
 .titulo-contactame{
     width: 80%;
@@ -706,10 +829,18 @@ main{
     margin: 10px 8px;
     padding: 3px;
 }
-.ul-contactame {
-    font-size: 30px;
+
+.caja-contacto{
+    height: 600px;
+
 }
 
+.ul-contactame {
+    width: 90%;
+    height: 60%;
+    margin: 2px;
+    font-size: 30px;
+}
 
 .li-icono{
     width: 80%;
@@ -743,6 +874,10 @@ main{
     margin: 0px 20px;
 }
 
+.caja-formulario{
+    height: 600px;
+}
+
 .titulo-formulario{
     width: 80%;
     margin: 20px auto;
@@ -750,31 +885,19 @@ main{
     font-size: 30px;
 }
 
+.contenedor-formulario{
+    height: 320px;
+    padding: 5px;
+}
+
 .caja-input{
-    width: 500px;
+    width: 80%;
     height: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-}
-
-.input-margen{
-    width: 200px;
-    height: 40px;
-    margin: 8px 0px;
-} 
-
-#texto-mensaje{
-    width: 500px;
-    height: 100px;
-    padding: 5px;
-    font-size: 26px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    margin: auto;
 }
 
 .label-formulario{
@@ -782,14 +905,38 @@ main{
     font-size: 26px ;
 }
 
-#mensaje{
-    margin:8px;
+.input-margen{
+    width: 250px;
 }
+
+#texto-mensaje{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mensaje{
+    width: 250px;
+    margin:8px 0px;
+}
+
+.boton-formulario{
+    width: 100px;
+    font-size: 30px;
+    border-radius: 10px;
+ }
 
 /* ---------FOOTER---------- */
 
 .contenedor-footer{
-    height: 200px;
+    height: 250px;
+}
+
+.boton-contenedor{
+    margin: 20px 0px;
 }
 
 .boton-footer{
@@ -829,6 +976,25 @@ main{
 
 @media (min-width:1024px) {
     /* ------NAV------- */
+    nav{
+        height: 90px;
+    }
+
+    .caja-nav{
+        display: inline;
+    }
+
+    .contenedor-navi{
+    display: none;
+    }
+
+    .fi-br-menu-burger{
+     display: none;
+    }
+     
+    .logo-nav{
+        width: 180px;
+    }
 
     /* ------HEADER--------- */
     .contenedor-hero{
@@ -842,7 +1008,7 @@ main{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-    } 
+    }
 
     .parrafo-hero1{
         font-size: 40px;
@@ -871,6 +1037,7 @@ main{
     /* -----MAIN-------- */
 
     main{
+        height: 1100px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -883,33 +1050,34 @@ main{
         height: 75px;
         font-size: 65px;
     }
-    
+
     .parrafo-conocimiento{
         font-size: 22px;
     }
 
     .contenedor-imagenes{
         width: 400px;
-        height: 200px; 
+        height: 250px;
+        margin-bottom: 30px;
     }
 
     .imagenes{
-        width: 100px;
+        width: 110px;
     }
 
     .p-conocimiento{
-        font-size: 25px;
+        font-size: 28px;
     }
 
 /* --------SECTION CITA------ */
 
 .seccion-cita{
-    height: 800px;
+    height: 1000px;
 }
 #icono-cita{
     width: 100px;
     height: 90px;
-} 
+}
 .fi-sc-quote-right{
     font-size: 80px;
 }
@@ -926,6 +1094,9 @@ main{
 }
 
 /* -------SECTION PROYECTOS-------- */
+.contenedor-proyecto{
+    height: 1400px;
+}
 
 .texto-proyecto{
     width: 60%;
@@ -939,19 +1110,19 @@ main{
     font-size: 22px;
     margin: auto;
 }
+
 /* ----SECTION CONTACTOS Y FORMULARIO--- */
 
-
 .contenedor-secciones{
-    height: 1000px;
+    height: 1500px;
 }
- 
-.contenedor-contacto{     
-    height: 950px;
+
+.contenedor-contacto{
+    height: 1450px;
 }
 
 .caja-contacto{
-    height: 475px;
+    height: 700px;
     margin: 10px 0px;
 }
 
@@ -961,11 +1132,46 @@ main{
 
 .texto-contactame{
     font-size: 22px;
+    margin: 0px auto;
 }
 
-.caja-formulario{ 
-    height: 475px;
-    margin-bottom: 15px; 
+.ul-contactame {
+    width: 90%;
+    height: 70%;
+    margin: 2px;
+    font-size: 34px;
+}
+
+.li-icono{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fi-brands-facebook{
+    font-size: 45px;
+}
+
+.fi-brands-github{
+    font-size: 45px;
+}
+
+.fi-brands-discord{
+    font-size: 45px;
+}
+
+.fi-ss-envelope{
+    font-size: 39px;
+}
+
+#icono-email{
+    margin: 0px 15px;
+}
+
+.caja-formulario{
+    height: 700px;
+    margin-bottom: 15px;
 }
 
 .titulo-formulario{
@@ -973,18 +1179,422 @@ main{
 }
 
 .contenedor-formulario{
-    width: 700px;
+    width: 80%;
+    height: 400px;
+    padding: 5px;
 }
 
 .caja-input{
-    width: 690px;
+    width: 90%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.label-formulario{
+    margin: 0px 10px;
+    font-size: 30px ;
 }
 
 .input-margen{
     width: 400px;
-
-} 
+    height: 30px;
 }
 
+#texto-mensaje{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+}
+
+#mensaje{
+    width: 400px;
+    height: 70px;
+    margin: 15px 0px 15px 15px;
+}
+
+.boton-formulario{
+    width: 200px;
+    font-size: 40px;
+    border-radius: 10px;
+ }
+
+
+/* ------FOOTER----- */
+
+.contenedor-footer{
+    height: 300px;
+}
+
+.boton-contenedor{
+    margin-top: 15px;
+}
+
+.boton-footer{
+    margin: 15px 5px;
+}
+
+.a-footer{
+    font-size: 35px;
+}
+
+.caja-footer{
+    height: 70px;
+}
+
+#fi-brands-facebook{
+    font-size: 60px;
+}
+
+#fi-brands-github{
+    font-size: 60px;
+}
+
+#fi-brands-discord{
+    font-size: 60px;
+}
+
+#fi-ss-envelope{
+    font-size: 56px;
+
+}
+.parrafo-footer{
+    font-size: 24px;
+}
+}
+
+/* -------------------------MEDIA QUERIS +1028------------ */
+@media (min-width:1028px){
+
+    /* -----NAV---- */
+nav{
+    height: 100px;
+}
+.logo-nav{
+    width: 250px;
+    margin: 0px 25px;
+}
+
+.li-navegacion{
+    font-size: 30px;
+}
+/* ---HEADER----- */
+
+.contenedor-hero{
+    height: 1200px;
+    background-color: #ffc0cb;
+    border: 10px solid rgb(255, 255, 139) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-hero{
+    width: 90%;
+    height: 1180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.parrafo-hero1{
+    width: 100%;
+    font-family: "Raleway";
+    font-size: 60px;
+    text-align: center;
+    margin: 10px;
+}
+
+h1{
+    font-size: 100px;
+    font-family: "Dancing Script";
+    margin: 0px 5px 5px 5px ;
+}
+
+.img-hero{
+    width: 450px;
+}
+
+.parrafo-hero2{
+    width: 90%;
+    height: 120px;
+    font-size: 30px;
+}
+    
+
+.boton-hero{
+    width: 400px;
+     font-size: 60px;
+}
+
+/* ---MAIN--- */
+
+main{
+    height: 1200px;
+}
+
+.titulo-conocimiento{
+    width: 60%;
+    height: 100px;
+    font-size: 80px;
+}
+
+.parrafo-conocimiento{
+    width: 90%;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.contenedor-imagenes{
+    width: 500px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.imagenes{
+    width: 150px;
+}
+
+.p-conocimiento{
+    font-size: 35px;
+}
+
+
+/* ----SECTION CITA---- */
+    .seccion-cita{
+        height: 1200px;
+    }
+
+    #icono-cita{
+        width: 150px;
+        height: 100px;
+        margin: 0px 25px;
+        text-align: center;
+    }
+
+    .fi-sc-quote-right{
+        font-size: 100px;
+    }
+
+    .cita{
+        width: 80%;
+        height: 250px;
+        text-align: center;
+        font-size: 45px;
+    }
+    
+
+    #autor-cita{
+      font-size: 45px;
+      margin-bottom: 20px;
+    }
+    
+    /* ----SECTION PROYECTOS---- */
+
+    .contenedor-proyecto{
+        height: 1600px;
+    }
+    
+    .texto-proyecto{
+        width: 60%;
+        height: 100px;
+        font-size: 80px;
+        margin: auto;
+    }
+    
+    .parrafo-proyecto{
+        width: 90%;
+        height: 70px;
+        font-size: 28px;
+    }
+    
+    .contenedorimg-proyecto{
+        width: 350px;
+        height: 280px;
+    }
+
+    .a-proyecto{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-proyecto{
+        width: 90%;
+        height: 180px;
+    }
+
+    .texto-img{
+      font-size: 30px; 
+    }
+
+    /* -----SECTION CONTACTO Y FORMULARIO--- */
+
+    .contenedor-secciones{
+        height: 1800px;
+    }
+    
+    .contenedor-contacto{
+        height: 1750px;
+    }
+    
+    .caja-contacto{
+        height: 800px;
+        margin: 10px 0px;
+    }
+    
+    .titulo-contactame{
+        font-size: 50px;
+    }
+    
+    .texto-contactame{
+        font-size: 28px;
+        margin: 0px auto;
+    }
+    
+    .ul-contactame {
+        width: 90%;
+        height: 70%;
+        margin: 2px;
+        font-size: 40px;
+    }
+    
+    .li-icono{
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .fi-brands-facebook{
+        font-size: 50px;
+    }
+    
+    .fi-brands-github{
+        font-size: 50px;
+    }
+    
+    .fi-brands-discord{
+        font-size: 50px;
+    }
+    
+    .fi-ss-envelope{
+        font-size: 49px;
+    }
+    
+    #icono-email{
+        margin: 0px 0px 0px 40px;
+    }
+    
+    .caja-formulario{
+        height: 800px;
+        margin-bottom: 15px;
+    }
+    
+    .titulo-formulario{
+        font-size: 50px;
+    }
+    
+    .contenedor-formulario{
+        width: 80%;
+        height: 500px;
+        padding: 5px;
+    }
+    
+    .caja-input{
+        width: 80%;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        font-size: 40px;
+    }
+    
+    .label-formulario{
+        margin: 0px 10px;
+        font-size: 40px ;
+    }
+    
+    .input-margen{
+        width: 500px;
+        height: 60px;
+    }
+    
+    #texto-mensaje{
+        width: 80%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 40px;
+    }
+    
+    #mensaje{
+        width: 500px;
+        height: 80px;
+        margin: 8px 0px;
+    }
+    
+    .boton-formulario{
+        width: 300px;
+        font-size: 50px;
+        border-radius: 10px;
+     }
+
+/* ----FOOTER---- */
+
+.contenedor-footer{
+    height: 400px;
+}
+
+.boton-contenedor{
+    margin-top: 30px;
+}
+
+.boton-footer{
+    margin: 15px 10px;
+}
+
+.a-footer{
+    font-size: 40px;
+}
+
+.caja-footer{
+    height: 80px;
+}
+
+#fi-brands-facebook{
+    font-size: 70px;
+}
+
+#fi-brands-github{
+    font-size: 70px;
+}
+
+#fi-brands-discord{
+    font-size: 72px;
+}
+
+#fi-ss-envelope{
+    font-size: 66px;
+
+}
+.parrafo-footer{
+    font-size: 35px;
+}
+}
 
 
