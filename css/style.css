@@ -1,6 +1,7 @@
 *{
     margin: 0;
     background-color: #ffc0cb;
+    box-sizing: border-box;
 }
 
 /* -----------------------------------------NAV---------------------------------------------- */
@@ -56,7 +57,7 @@ nav{
     background-color: #5272ff;
     color: #ffc0cb;
     font-size: 20px;
-    margin: 0px 30px;
+    margin: 0px 35px;
 }
 
 /* -----------------------------------------------HEADER----------------------------------------------- */
@@ -315,7 +316,7 @@ main{
 }
 .titulo-contactame{
     font-family: "Dancing Script";
-    width: 120px;
+    width: 150px;
     margin: 10px auto ;
     padding: 10px;
     font-size: 20px;
@@ -426,7 +427,7 @@ main{
 }
 
 .contenedor-formulario{
-    width: 80%;
+    width: 90%;
     height: 360px;
     background-color: white;
     display: flex;
@@ -1072,7 +1073,8 @@ main{
 /* --------SECTION CITA------ */
 
 .seccion-cita{
-    height: 1000px;
+   min-height: 1000px;
+   height: auto;
 }
 #icono-cita{
     width: 100px;
@@ -1371,7 +1373,7 @@ main{
 
 /* ----SECTION CITA---- */
     .seccion-cita{
-        height: 1200px;
+        min-height: 1200px;
     }
 
     #icono-cita{
@@ -1596,5 +1598,3 @@ main{
     font-size: 35px;
 }
 }
-
-
