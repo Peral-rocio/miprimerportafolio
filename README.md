@@ -1,4 +1,4 @@
-###¡HOLA, BIENVENIDO A MI PRIMER PORTAFOLIO! 
+¡HOLA, BIENVENIDO A MI PRIMER PORTAFOLIO! 
 
 En esta instancia estoy en mis primeros pasos en el mundo de la programacion, y este es el primer portafolio que realizo como parte de una primer entrega de trabajo practico en donde estoy estudiando.
 
@@ -16,4 +16,4 @@ El trabajo consiste en:
 - Reutilización de estilos.
 - Utilizacion de Commits con mensajes adecuados y contar con un favicon.
 
-#####A medida que vaya avanzando en mis conocimientos se le agregará nuevas secciones, elementos, interacciones y efectos que ofrecerán una mejor y más completa experiencia de usuario.
+A medida que vaya avanzando en mis conocimientos se le agregará nuevas secciones, elementos, interacciones y efectos que ofrecerán una mejor y más completa experiencia de usuario.
