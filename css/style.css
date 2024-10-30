@@ -106,7 +106,7 @@ h1{
 }
 
 .boton-hero{
-    width: 150px;
+    width: 120px;
     font-family: "Dancing Script";
    background-color:rgb(255, 255, 139) ;
      margin: 12px 12px 14px 12px;
@@ -123,6 +123,15 @@ h1{
     cursor: pointer;
     background-color: #5272ff;
     color: white;
+}
+
+#loquehago{
+    text-decoration: none;
+    color: black;
+}
+
+#loquehago:hover{
+   color: white
 }
 
 /* ------------------------------------------MAIN----------------------------------------------------- */
@@ -661,7 +670,7 @@ main{
     }
 
     .boton-hero{
-        width: 300px;
+        width: 250px;
         font-size: 40px;
     }
 
@@ -1324,7 +1333,7 @@ h1{
     
 
 .boton-hero{
-    width: 400px;
+    width: 300px;
      font-size: 60px;
 }
 
