@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    padding: 0;
     background-color: #ffc0cb;
     box-sizing: border-box;
 }
@@ -7,7 +8,6 @@
 /* -----------------------------------------NAV---------------------------------------------- */
 
 nav{
-    width: 100vw;
     height: 40px;
     background-color: #5272ff;
     display: flex;
@@ -22,7 +22,7 @@ nav{
  }
 
 .ul-navegacion{
-    height: 60px;
+    height: 57px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -44,12 +44,9 @@ nav{
     background-color: palevioletred;
     border-radius: 3px;
 }
-.contenedor-navi{
-   background-color: #5272ff;
-}
 
 .logo-nav{
-    width: 100px;
+    width: 86px;
     margin: 0px 25px;
 }
 
@@ -82,7 +79,7 @@ nav{
 }
 
 .parrafo-hero1{
-    width: 100%;
+    width: 90%;
     font-family: "Raleway";
     font-size: 18px;
     text-align: center;
@@ -132,7 +129,7 @@ h1{
 
 main{
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, #94bbe9 100%);
-    height: 700px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -185,19 +182,12 @@ main{
 /* --------------------------------------SECTION CITA----------------------------------------- */
 
 .seccion-cita{
-    height: 380px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     font-family: "Dancing Script";
-}
-
-#icono-cita{
-    width: 50px;
-    height: 30px;
-    margin: 0px 25px;
-    text-align: center;
 }
 
 .fi-sc-quote-right{
@@ -249,8 +239,8 @@ main{
 }
 
 .contenedorimg-proyecto{
-    width: 150px;
-    height: 130px;
+    width: 180px;
+    height: 140px;
     background: radial-gradient(circle, rgba(255,192,203,1) 12%, rgba(198,82,255,0.773546918767507) 63%, rgba(255,192,203,1) 100%);
     display: flex;
     flex-direction: column;
@@ -454,10 +444,7 @@ main{
 }
 
 #texto-mensaje{
-    width: 180px;
-    height: 100px;
-    margin: auto;
-    padding: 5px;
+    width: 200px;
     font-family: "Dancing Script";
     font-size: 20px;
     text-align: center;
@@ -467,7 +454,9 @@ main{
     background-color: white;
 }
 #mensaje{
-    margin: 8px 0px;
+    width: 190px;
+    height: 50px;
+    margin-top: 10px;
     background-color: white;
 }
 
@@ -540,26 +529,18 @@ main{
     height: 50px;
     margin-top: 10px;
     background-color: #5272ff;
-}
-
-.iconos-footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    list-style: none;
-    padding: 0;
-    background-color: #5272ff;
-}
-
-.li-footer{
-    background-color: #5272ff;
 }
 
 .ali-footer{
-    margin: 5px;
-    padding: 5px;
+    height: 50px;
     background-color: #5272ff;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #fi-brands-facebook{
@@ -608,7 +589,7 @@ main{
     font-size: 15px;
     font-family: "Raleway";
     color: white;
-    margin: 20px;
+    margin: 10px;
     background-color: #5272ff;
 }
 
@@ -738,9 +719,6 @@ main{
     font-family: "Dancing Script";
 }
 
-    #icono-cita{
-        height: 60px;
-    }
     .fi-sc-quote-right{
         font-size: 50px;
     }
@@ -902,6 +880,7 @@ main{
 }
 
 .label-formulario{
+    width: 130px;
     margin: 0px 10px;
     font-size: 26px ;
 }
@@ -921,7 +900,7 @@ main{
 
 #mensaje{
     width: 250px;
-    margin:8px 0px;
+    margin:8px 10px;
 }
 
 .boton-formulario{
@@ -949,7 +928,15 @@ main{
 }
 
 .caja-footer{
-    height: 50px;
+    height: 70px;
+}
+
+.ali-footer{
+    width: 50px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #fi-brands-facebook{
@@ -983,10 +970,6 @@ main{
 
     .caja-nav{
         display: inline;
-    }
-
-    .contenedor-navi{
-    display: none;
     }
 
     .fi-br-menu-burger{
@@ -1053,6 +1036,7 @@ main{
     }
 
     .parrafo-conocimiento{
+        height: 60px;
         font-size: 22px;
     }
 
@@ -1076,10 +1060,7 @@ main{
    min-height: 1000px;
    height: auto;
 }
-#icono-cita{
-    width: 100px;
-    height: 90px;
-}
+
 .fi-sc-quote-right{
     font-size: 80px;
 }
@@ -1197,6 +1178,7 @@ main{
 }
 
 .label-formulario{
+    width: 150px;
     margin: 0px 10px;
     font-size: 30px ;
 }
@@ -1219,7 +1201,7 @@ main{
 #mensaje{
     width: 400px;
     height: 70px;
-    margin: 15px 0px 15px 15px;
+    margin: 15px;
 }
 
 .boton-formulario{
@@ -1248,7 +1230,15 @@ main{
 }
 
 .caja-footer{
-    height: 70px;
+    height: 90px;
+}
+
+.ali-footer{
+    height: 90px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #fi-brands-facebook{
@@ -1309,7 +1299,7 @@ nav{
 }
 
 .parrafo-hero1{
-    width: 100%;
+    width: 90%;
     font-family: "Raleway";
     font-size: 60px;
     text-align: center;
@@ -1352,8 +1342,9 @@ main{
 
 .parrafo-conocimiento{
     width: 90%;
+    height: 70px;
     font-size: 25px;
-    padding: 5px;
+    padding: 14px;
 }
 
 .contenedor-imagenes{
@@ -1374,13 +1365,6 @@ main{
 /* ----SECTION CITA---- */
     .seccion-cita{
         min-height: 1200px;
-    }
-
-    #icono-cita{
-        width: 150px;
-        height: 100px;
-        margin: 0px 25px;
-        text-align: center;
     }
 
     .fi-sc-quote-right{
@@ -1525,6 +1509,7 @@ main{
     }
     
     .label-formulario{
+        width: 180px;
         margin: 0px 10px;
         font-size: 40px ;
     }
@@ -1547,7 +1532,7 @@ main{
     #mensaje{
         width: 500px;
         height: 80px;
-        margin: 8px 0px;
+        margin: 8px;
     }
     
     .boton-formulario{
@@ -1575,7 +1560,12 @@ main{
 }
 
 .caja-footer{
-    height: 80px;
+    height: 100px;
+}
+.ali-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #fi-brands-facebook{
